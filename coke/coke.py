@@ -1,17 +1,17 @@
 def main():
 
-    debit = 50
+    valor_devido = 50
 
-    while debit > 0:
-        print(f"Amount Due: {debit}")
+    while valor_devido > 0:
+        print(f"Amount Due: {valor_devido}")
 
-        insert_coin = int(input("Insira sua Moeda: "))
+        moeda_inserida = int(input("Insira sua Moeda: "))
 
-        if insert_coin in [5, 10, 25]:
-            debit -= insert_coin
+        if moeda_inserida in [5, 10, 25]:
+            valor_devido -= moeda_inserida
 
-    change = abs(debit)
+    troco_devido = abs(valor_devido)
 
-    print(f"Change Owed: {change}")
+    print(f"Change Owed: {troco_devido}")
 
 main()

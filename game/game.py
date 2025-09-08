@@ -2,6 +2,9 @@ import random
 import sys
 
 def main():
+    """
+    Executa um jogo de adivinhação de números.
+    """
     level = get_level()
     secret_number = random.randint(1, level)
 
@@ -16,6 +19,9 @@ def main():
             sys.exit()
 
 def get_level():
+    """
+    Solicita ao usuário um nível (inteiro positivo) e o retorna.
+    """
     while True:
         try:
             n = int(input("Level: "))
@@ -25,6 +31,9 @@ def get_level():
             pass
 
 def get_guess():
+    """
+    Solicita ao usuário um palpite (inteiro positivo) e o retorna.
+    """
     while True:
         try:
             g = int(input("Guess: "))

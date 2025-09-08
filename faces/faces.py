@@ -1,17 +1,21 @@
 def main():
 
-    original_text = input("")
+    texto_original = input("")
 
-    converted_text = convert(original_text)
+    texto_convertido = converter(texto_original)
 
-    print(converted_text)
+    print(texto_convertido)
 
-def convert(phrase):
+def converter(frase):
+    """
+    Recebe uma string, substitui os emoticons :) e :( por emojis
+    e retorna a nova string.
+    """
 
-    modified_phrase = phrase.replace(":)", "🙂")
+    frase_modificada = frase.replace(":)", "🙂")
 
-    final_phrase = modified_phrase.replace(":(", "🙁")
+    frase_final = frase_modificada.replace(":(", "🙁")
 
-    return final_phrase
+    return frase_final
 
 main()

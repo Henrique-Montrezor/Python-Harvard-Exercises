@@ -3,6 +3,9 @@ import random
 from pyfiglet import Figlet
 
 def main():
+    """
+    Renderiza o texto em uma fonte FIGlet especificada ou aleatória.
+    """
     figlet = Figlet()
     font_list = figlet.getFonts()
 

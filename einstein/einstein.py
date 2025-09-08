@@ -1,11 +1,15 @@
 def main():
-    mass_kg = int(input("m: "))
+    """
+    Função principal: Pede a massa ao usuário e imprime a energia correspondente.
+    """
+    massa_kg = int(input("m: "))
 
-    speed_of_light = 300000000
+    velocidade_luz = 300000000
 
-    energy_joules = mass_kg * (speed_of_light ** 2)
+    energia_joules = massa_kg * (velocidade_luz ** 2)
 
-    print(f"E: {energy_joules}")
+    print(f"E: {energia_joules}")
 
 
+# Executa a função main para iniciar o programa
 main()

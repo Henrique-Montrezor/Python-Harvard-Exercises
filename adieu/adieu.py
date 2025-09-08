@@ -1,6 +1,9 @@
 import inflect
 
 def main():
+    """
+    Solicita nomes e os imprime em uma despedida formatada.
+    """
     p = inflect.engine()
     names = []
 
